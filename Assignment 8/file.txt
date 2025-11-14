@@ -1,0 +1,10 @@
+Alice
+3.4
+Bob
+2.9
+Charlie
+3.9
+Denise
+3.6
+Eli
+2.3
