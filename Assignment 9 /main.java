@@ -33,6 +33,27 @@ public class App {
         }
         System.out.println("Maximum value: " + max);
         //Prints out the max value of the stack
+        int min = stax.get(0);
+        //Sets the minimum to the first stack value
+        for(int i = 0; i < stax.size(); i++)
+        {
+            //Loops through the stack
+            for(int j = 0; j < stax.size(); j++)
+            {
+                //Loops through the stack again
+                if(stax.get(i) < stax.get(j))
+                {
+                    //Compares the element at position i to the element at position j
+                    if(stax.get(i) < min)
+                    {
+                        //If the element at i is less than the minimum, set the minimum to that value
+                        min = stax.get(i);
+                    }
+                }
+            }
+        }
+        System.out.println("Minimum value: " + min);
+        //Prints out the min value of the stack
         System.out.println("Number of elements in stack: " + stax.size());
         //Prints out the number of elements in the stack
         
